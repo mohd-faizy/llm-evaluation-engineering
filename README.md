@@ -1,48 +1,58 @@
-# LLM Evaluation Engineering 
+<div align="center">
 
-<div align="center"> 
-  <img src="assets/banner.png" width="750" alt="banner" style="border-radius: 10px;"> 
-</div>
+# LLM Evaluation Engineering
+### Enterprise Architectural Blueprints, Curriculum & Practical Toolkit
 
-**The Comprehensive Architectural Blueprint, Curriculum, and Practical Toolkit for Evaluating, Benchmarking, and Monitoring Enterprise LLMs, RAG Pipelines, and Autonomous Agents.**
+<img src="assets/banner.png" width="780" alt="LLM Evaluation Engineering Banner" style="border-radius: 10px; margin: 16px 0;">
 
 <p align="center">
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics/stargazers"><img src="https://img.shields.io/github/stars/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=github&color=eab308" alt="GitHub Stars" /></a>
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics/network/members"><img src="https://img.shields.io/github/forks/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=git&color=38bdf8" alt="GitHub Forks" /></a>
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics/issues"><img src="https://img.shields.io/github/issues/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=github&color=f43f5e" alt="Open Issues" /></a>
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white" alt="PRs Welcome" /></a>
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics/commits/main"><img src="https://img.shields.io/github/last-commit/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=git&color=818cf8" alt="Last Commit" /></a>
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics"><img src="https://img.shields.io/github/repo-size/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=database&color=06b6d4" alt="Repo Size" /></a>
+  <strong>The Comprehensive Architectural Blueprint, Curriculum, and Practical Toolkit for Evaluating, Benchmarking, and Monitoring Enterprise LLMs, RAG Pipelines, and Autonomous Agents.</strong>
 </p>
 
+<!-- GitHub & Community Badges -->
+<p align="center">
+  <a href="https://github.com/mohd-faizy/llm-evaluation-engineering/stargazers"><img src="https://img.shields.io/github/stars/mohd-faizy/llm-evaluation-engineering?style=for-the-badge&logo=github&color=eab308" alt="GitHub Stars" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evaluation-engineering/network/members"><img src="https://img.shields.io/github/forks/mohd-faizy/llm-evaluation-engineering?style=for-the-badge&logo=git&color=38bdf8" alt="GitHub Forks" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evaluation-engineering/issues"><img src="https://img.shields.io/github/issues/mohd-faizy/llm-evaluation-engineering?style=for-the-badge&logo=github&color=f43f5e" alt="Open Issues" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evaluation-engineering/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white" alt="PRs Welcome" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evaluation-engineering/commits/main"><img src="https://img.shields.io/github/last-commit/mohd-faizy/llm-evaluation-engineering?style=for-the-badge&logo=git&color=818cf8" alt="Last Commit" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evaluation-engineering"><img src="https://img.shields.io/github/repo-size/mohd-faizy/llm-evaluation-engineering?style=for-the-badge&logo=database&color=06b6d4" alt="Repo Size" /></a>
+</p>
+
+<!-- Technology & Structure Badges -->
 <p align="center">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" /></a>
   <a href="https://jupyter.org/"><img src="https://img.shields.io/badge/Jupyter-Notebooks-F37626.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Notebooks" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-22c55e.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="MIT License" /></a>
-  <a href="#-curriculum-roadmap"><img src="https://img.shields.io/badge/Curriculum-21%20Modules-6366f1.svg?style=for-the-badge&logo=readme&logoColor=white" alt="21 Modules" /></a>
-  <a href="#-interactive-hands-on-notebooks"><img src="https://img.shields.io/badge/Lab%20Notebooks-10%20Guides-ec4899.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="10 Lab Notebooks" /></a>
+  <a href="#curriculum-roadmap"><img src="https://img.shields.io/badge/Curriculum-21%20Modules-6366f1.svg?style=for-the-badge&logo=readme&logoColor=white" alt="21 Modules" /></a>
+  <a href="#interactive-notebooks"><img src="https://img.shields.io/badge/Lab%20Notebooks-10%20Guides-ec4899.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="10 Lab Notebooks" /></a>
 </p>
 
+<!-- Domains & Focus Badges -->
 <p align="center">
-  <a href="#-overview"><img src="https://img.shields.io/badge/Evals-RAG%20%7C%20Agents%20%7C%20Judge-8b5cf6.svg?style=for-the-badge&logo=openai&logoColor=white" alt="Evals Focus" /></a>
-  <a href="#-key-evaluation-frameworks--tools-reference"><img src="https://img.shields.io/badge/Frameworks-DeepEval%20%7C%20Ragas-ff69b4.svg?style=for-the-badge" alt="DeepEval and Ragas" /></a>
+  <a href="#overview"><img src="https://img.shields.io/badge/Evals-RAG%20%7C%20Agents%20%7C%20Judge-8b5cf6.svg?style=for-the-badge&logo=openai&logoColor=white" alt="Evals Focus" /></a>
+  <a href="#tools-reference"><img src="https://img.shields.io/badge/Frameworks-DeepEval%20%7C%20Ragas-ff69b4.svg?style=for-the-badge" alt="DeepEval and Ragas" /></a>
   <a href="03_benchmarks/README.md"><img src="https://img.shields.io/badge/Benchmarks-MMLU%20%7C%20SWE--bench-10b981.svg?style=for-the-badge" alt="Benchmarks" /></a>
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics"><img src="https://img.shields.io/badge/Maintenance-Active-brightgreen.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="Active Maintenance" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evaluation-engineering"><img src="https://img.shields.io/badge/Maintenance-Active-brightgreen.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="Active Maintenance" /></a>
 </p>
 
+<!-- Quick Jump Menu -->
 <p align="center">
-  <a href="#-overview">Overview</a> •
-  <a href="#-curriculum-roadmap">Curriculum Roadmap</a> •
-  <a href="#-interactive-hands-on-notebooks">Interactive Notebooks</a> •
-  <a href="#-evaluation-spectrum--tradeoffs-matrix">Evaluation Matrix</a> •
-  <a href="#-architectural-blueprints-gallery">System Blueprints</a> •
-  <a href="#-quick-start">Quick Start</a>
+  <a href="#overview">Overview</a> •
+  <a href="#system-architecture">Architecture Taxonomy</a> •
+  <a href="#curriculum-roadmap">Curriculum Roadmap</a> •
+  <a href="#interactive-notebooks">Interactive Notebooks</a> •
+  <a href="#evaluation-matrix">Evaluation Matrix</a> •
+  <a href="#blueprints-gallery">System Blueprints</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#tools-reference">Tools Reference</a>
 </p>
-
----
 
 </div>
 
+---
+
+<a id="overview"></a>
 ## 📌 Overview
 
 Transitioning Generative AI applications from **brittle prototypes** to **reliable, enterprise-grade production systems** requires moving past subjective *"vibe checks"* toward **rigorous, repeatable, and automated Evaluation Engineering**.
@@ -65,19 +75,28 @@ This repository is an industry-tested, end-to-end framework and curriculum desig
 
 ---
 
+<a id="system-architecture"></a>
 ## 🏛️ System Architecture Taxonomy
 
 <div align="center"> 
-  <img src="assets/rdmd01.png" width="550" alt="rdmd01" style="border-radius: 10px;"> 
-  <p><em>Figure 1: Full-Spectrum LLM Evaluation Architecture — from offline datasets to production monitoring.</em></p>
+  <img src="assets/rdmd01.png" width="650" alt="Full-Spectrum LLM Evaluation Architecture Taxonomy" style="border-radius: 10px; max-width: 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"> 
+  <p align="center"><sub><em>Figure 1: Full-Spectrum LLM Evaluation Architecture — from offline datasets to production monitoring.</em></sub></p>
 </div>
 
 ---
 
+<a id="curriculum-roadmap"></a>
 ## 🗺️ Curriculum Roadmap
 
 The curriculum is structured into **5 logical phases across 21 modular sections**, guiding you from baseline mindset to building custom evaluation frameworks:
 
+```mermaid
+flowchart LR
+    P1["<b>Phase I</b><br/>Foundations & Mindset"] --> P2["<b>Phase II</b><br/>Core Evals & Judge"]
+    P2 --> P3["<b>Phase III</b><br/>Specialized Systems"]
+    P3 --> P4["<b>Phase IV</b><br/>Safety & Production"]
+    P4 --> P5["<b>Phase V</b><br/>Frontiers & Capstone"]
+```
 
 ### Phase I: Foundations & Strategic Mindset
 *Understand the philosophy, mathematics, and public benchmarks before writing evaluation code.*
@@ -87,7 +106,7 @@ The curriculum is structured into **5 logical phases across 21 modular sections*
 | **[00. Evaluation Mindset](00_eval_mindset/README.md)** | Why vibe checks fail, cost of hallucinations, the 4 foundational questions, failure-mode analysis. | Pointwise vs Pairwise, Error Budgeting, Quality vs Cost Tradeoffs |
 | **[01. Evaluation Fundamentals](01_fundamentals/README.md)** | Measurement theory, qualitative vs quantitative metrics, deterministic vs heuristic vs model-based evals. | Exact Match, BLEU, ROUGE, BERTScore, Levenshtein, Perplexity |
 | **[02. Evaluation Landscape](02_landscape/README.md)** | Ecosystem mapping: Frameworks, Observability platforms, benchmark harnesses, and LLM Judge engines. | DeepEval, Ragas, TruLens, LangSmith, Phoenix, OpenInference, HELM |
-| **[03. Foundation Benchmarks](03_benchmarks/README.md)** | Standard public benchmarks, benchmark contamination detection, leaderboard hygiene, goodhart's law. | MMLU, MMLU-Pro, GSM8K, HumanEval, GPQA, Chatbot Arena (Elo) |
+| **[03. Foundation Benchmarks](03_benchmarks/README.md)** | Standard public benchmarks, benchmark contamination detection, leaderboard hygiene, Goodhart's Law. | MMLU, MMLU-Pro, GSM8K, HumanEval, GPQA, Chatbot Arena (Elo) |
 
 ---
 
@@ -140,25 +159,27 @@ The curriculum is structured into **5 logical phases across 21 modular sections*
 
 ---
 
+<a id="interactive-notebooks"></a>
 ## 📓 Interactive Hands-on Notebooks
 
 The [`notebooks/`](notebooks/) directory contains complete, runnable Jupyter notebooks packed with real datasets, evaluation harnesses, and visual diagrams:
 
 | Notebook | Topic & Key Concepts | Focus & Implementation | Direct Link |
-| :--- | :--- | :--- | :---: |
-| **01** | **LLM Evaluation Engineering** | Core evaluation taxonomy, why vibe checks fail, deterministic vs model-based metrics | [Launch Notebook](notebooks/01_LLM_Evals.ipynb) |
-| **02** | **Model vs Application Evals** | Capability benchmarking vs user-facing product evaluation and task alignment | [Launch Notebook](notebooks/02_Model_vs_App_Evals.ipynb) |
-| **03** | **End-to-End Eval Workflow** | Constructing end-to-end evaluation loops, test suite runners, and scoring aggregation | [Launch Notebook](notebooks/03_End_to_End_Eval_Workflow.ipynb) |
-| **04** | **Multi-Pipeline Architecture** | Modular evaluation pipelines for multi-stage chains, RAG layers, and agent flows | [Launch Notebook](notebooks/04_Multi_Pipeline_Eval_Architecture.ipynb) |
-| **05** | **Mechanisms & Paradigms** | Comparing Deterministic Rules, Heuristics, Embeddings, and LLM-as-a-Judge paradigms | [Launch Notebook](notebooks/05_Eval_Mechanisms_&_Paradigms.ipynb) |
-| **06** | **Offline vs Online Evals** | CI/CD regression suites, shadow deployments, online telemetry, and feedback loops | [Launch Notebook](notebooks/06_Offline_vs_Online_Evals.ipynb) |
-| **07** | **Model-Level Metrics** | Perplexity, BLEU, ROUGE, Exact Match, Pass@k, BERTScore, and String Distance | [Launch Notebook](notebooks/07_Model_Level_Evals.ipynb) |
-| **08** | **Benchmarking Harnesses** | Integrating open-source harnesses (`lm-evaluation-harness`, Lighteval, DeepEval, Ragas) | [Launch Notebook](notebooks/08_Benchmarking_and_Eval_Harnesses.ipynb) |
-| **Guide** | **Context Rot Deep-Dive** | Long-context degradation, attention limits, lost-in-the-middle, and needle tests | [Read Guide](notebooks/Context_Rot_llm.md) |
-| **Bench** | **Knowledge Benchmarks** | Detailed exploration of MMLU, TruthfulQA, AGIEval, GPQA, MMLU-Pro, and HLE | [Launch Notebook](notebooks/XX_LLM_Knowledge_Benchmarks.ipynb) |
+| :---: | :--- | :--- | :---: |
+| **01** | **LLM Evaluation Engineering** | Core evaluation taxonomy, why vibe checks fail, deterministic vs model-based metrics | [Launch Notebook ↗](notebooks/01_LLM_Evals.ipynb) |
+| **02** | **Model vs Application Evals** | Capability benchmarking vs user-facing product evaluation and task alignment | [Launch Notebook ↗](notebooks/02_Model_vs_App_Evals.ipynb) |
+| **03** | **End-to-End Eval Workflow** | Constructing end-to-end evaluation loops, test suite runners, and scoring aggregation | [Launch Notebook ↗](notebooks/03_End_to_End_Eval_Workflow.ipynb) |
+| **04** | **Multi-Pipeline Architecture** | Modular evaluation pipelines for multi-stage chains, RAG layers, and agent flows | [Launch Notebook ↗](notebooks/04_Multi_Pipeline_Eval_Architecture.ipynb) |
+| **05** | **Mechanisms & Paradigms** | Comparing Deterministic Rules, Heuristics, Embeddings, and LLM-as-a-Judge paradigms | [Launch Notebook ↗](notebooks/05_Eval_Mechanisms_&_Paradigms.ipynb) |
+| **06** | **Offline vs Online Evals** | CI/CD regression suites, shadow deployments, online telemetry, and feedback loops | [Launch Notebook ↗](notebooks/06_Offline_vs_Online_Evals.ipynb) |
+| **07** | **Model-Level Metrics** | Perplexity, BLEU, ROUGE, Exact Match, Pass@k, BERTScore, and String Distance | [Launch Notebook ↗](notebooks/07_Model_Level_Evals.ipynb) |
+| **08** | **Benchmarking Harnesses** | Integrating open-source harnesses (`lm-evaluation-harness`, Lighteval, DeepEval, Ragas) | [Launch Notebook ↗](notebooks/08_Benchmarking_and_Eval_Harnesses.ipynb) |
+| **Guide** | **Context Rot Deep-Dive** | Long-context degradation, attention limits, lost-in-the-middle, and needle tests | [Read Guide ↗](notebooks/Context_Rot_llm.md) |
+| **Bench** | **Knowledge Benchmarks** | Detailed exploration of MMLU, TruthfulQA, AGIEval, GPQA, MMLU-Pro, and HLE | [Launch Notebook ↗](notebooks/XX_LLM_Knowledge_Benchmarks.ipynb) |
 
 ---
 
+<a id="evaluation-matrix"></a>
 ## ⚖️ Evaluation Spectrum & Tradeoffs Matrix
 
 When architecting an evaluation suite, choose the metric paradigm that matches your constraints on **cost**, **speed**, and **semantic depth**:
@@ -174,38 +195,50 @@ When architecting an evaluation suite, choose the metric paradigm that matches y
 
 ---
 
+<a id="blueprints-gallery"></a>
 ## 🖼️ Architectural Blueprints Gallery
 
-This repository provides visual architecture diagrams for the most critical evaluation patterns:
+This repository provides production-grade visual architecture blueprints for the most critical evaluation patterns:
 
 <div align="center">
 
 | RAG Triad Evaluation Pipeline | LLM-as-a-Judge Calibrated Scoring Flow |
 | :---: | :---: |
-| <img src="assets/08_rag_sys.png" alt="RAG System Evaluation" width="440" /> | <img src="assets/07_judge.png" alt="LLM as a Judge Flow" width="440" /> |
+| <img src="assets/08_rag_sys.png" alt="RAG System Evaluation" width="440" style="border-radius: 8px; max-width: 100%;" /> | <img src="assets/07_judge.png" alt="LLM as a Judge Flow" width="440" style="border-radius: 8px; max-width: 100%;" /> |
 | *[08_rag_evals/](08_rag_evals/README.md)* | *[07_llm_judge/](07_llm_judge/README.md)* |
 
 | Autonomous Agent Evaluation Loop | Continuous Production Evaluation Lifecycle |
 | :---: | :---: |
-| <img src="assets/10_agent_loop.png" alt="Agent Loop Evaluation" width="440" /> | <img src="assets/16_prod_evals.png" alt="Production Monitoring" width="440" /> |
+| <img src="assets/10_agent_loop.png" alt="Agent Loop Evaluation" width="440" style="border-radius: 8px; max-width: 100%;" /> | <img src="assets/16_prod_evals.png" alt="Production Monitoring" width="440" style="border-radius: 8px; max-width: 100%;" /> |
 | *[10_agent_evals/](10_agent_evals/README.md)* | *[16_production_evals/](16_production_evals/README.md)* |
 
 | Multi-Agent System Coordination | Coding Agent Spectrum & Sandbox Testing |
 | :---: | :---: |
-| <img src="assets/11_mul_agent_eval.png" alt="Multi-Agent System Evaluation" width="440" /> | <img src="assets/18_code_ag_evl.png" alt="Coding Agent Evaluation" width="440" /> |
+| <img src="assets/11_mul_agent_eval.png" alt="Multi-Agent System Evaluation" width="440" style="border-radius: 8px; max-width: 100%;" /> | <img src="assets/18_code_ag_evl.png" alt="Coding Agent Evaluation" width="440" style="border-radius: 8px; max-width: 100%;" /> |
 | *[11_multi_agent_evals/](11_multi_agent_evals/README.md)* | *[18_coding_agent_evals/](18_coding_agent_evals/README.md)* |
+
+| Continuous Eval & CI/CD Regression Pipeline | Deterministic & Graph Workflow Evaluation |
+| :---: | :---: |
+| <img src="assets/06_cr.png" alt="Continuous Regression Pipeline" width="440" style="border-radius: 8px; max-width: 100%;" /> | <img src="assets/09_workflow.png" alt="Workflow Evaluation" width="440" style="border-radius: 8px; max-width: 100%;" /> |
+| *[06_eval_pipelines/](06_eval_pipelines/README.md)* | *[09_workflow_evals/](09_workflow_evals/README.md)* |
+
+| LLM Memory & Long-Context Needle Retrieval | Multimodal & Vision-Language Model Evaluation |
+| :---: | :---: |
+| <img src="assets/13_mem_eval.png" alt="Memory and Needle Evaluation" width="440" style="border-radius: 8px; max-width: 100%;" /> | <img src="assets/17_multiMod_eval.png" alt="Multimodal Evaluation" width="440" style="border-radius: 8px; max-width: 100%;" /> |
+| *[13_memory_evals/](13_memory_evals/README.md)* | *[17_multimodal_evals/](17_multimodal_evals/README.md)* |
 
 </div>
 
 ---
 
+<a id="quick-start"></a>
 ## ⚡ Quick Start
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mohd-faizy/llm-evals-metrics.git
-cd llm-evals-metrics
+git clone https://github.com/mohd-faizy/llm-evaluation-engineering.git
+cd llm-evaluation-engineering
 ```
 
 ### 2. Set Up Python Environment
@@ -231,12 +264,10 @@ pip install jupyterlab deepeval ragas trulens-eval bert-score rouge-score scikit
 jupyter lab notebooks/
 ```
 
-### 4. Configure API Keys (Optional for Judge Evals)
-
-If running LLM-as-a-Judge or RAG evals with frontier models:
+### 4. Configure API Keys (Optional for LLM Judge & Frontier Models)
 
 ```bash
-# On Linux/macOS
+# On Linux / macOS
 export OPENAI_API_KEY="your-api-key"
 export ANTHROPIC_API_KEY="your-api-key"
 
@@ -247,6 +278,7 @@ $env:ANTHROPIC_API_KEY="your-api-key"
 
 ---
 
+<a id="tools-reference"></a>
 ## 🛠️ Key Evaluation Frameworks & Tools Reference
 
 | Tool / Library | Category | Description | Primary Use Case |
@@ -259,17 +291,6 @@ $env:ANTHROPIC_API_KEY="your-api-key"
 | **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** | Observability & Tracing | Open-source tracing, evaluations, and data drift analysis. | Production tracing, latency/token telemetry |
 | **[LangSmith](https://smith.langchain.com/)** | Observability & Evals | Full lifecycle observability, dataset management, and automated test runners. | Prompt iteration, trace monitoring |
 
----
-
-## 🤝 Contributing
-
-We welcome contributions from the AI engineering community! Whether you want to add a new evaluation metric notebook, improve documentation, or share an architectural blueprint:
-
-1. **Fork the Repository**
-2. **Create a Feature Branch** (`git checkout -b feature/NewEvalMetric`)
-3. **Commit your Changes** (`git commit -m 'Add LLM-as-a-Judge Calibration Metric'`)
-4. **Push to the Branch** (`git push origin feature/NewEvalMetric`)
-5. **Open a Pull Request**
 
 ---
 
@@ -278,6 +299,7 @@ We welcome contributions from the AI engineering community! Whether you want to 
 This repository is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for complete details.
 
 ---
+
 ## 🔗 Connect with Me
 
 <div align="center">
@@ -289,5 +311,7 @@ This repository is licensed under the **MIT License**. See the [`LICENSE`](LICEN
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/F4izy)
 [![Stack Exchange](https://img.shields.io/badge/Stack_Exchange-1E5397?style=for-the-badge&logo=stack-exchange&logoColor=white)](https://ai.stackexchange.com/users/36737/faizy)
 
-</div>
+<br/>
+<sub>Designed & Maintained with 💡 for AI Engineers, ML Scientists, and Applied GenAI Practitioners.</sub>
 
+</div>
