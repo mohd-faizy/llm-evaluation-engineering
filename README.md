@@ -67,8 +67,10 @@ This repository is an industry-tested, end-to-end framework and curriculum desig
 
 ## 🏛️ System Architecture Taxonomy
 
-<div align="center">
-  <img src="assets/rdmd01.png" alt="LLM Evaluation Architecture Taxonomy" style="width: 100%; max-width: 950px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+<div align="center"> 
+  <img src="assets/rdmd01.png" width="550" alt="rdmd01" style="border-radius: 10px;"> 
+</div>
+
   <p><em>Figure 1: Full-Spectrum LLM Evaluation Architecture — from offline datasets to production monitoring.</em></p>
 </div>
 
