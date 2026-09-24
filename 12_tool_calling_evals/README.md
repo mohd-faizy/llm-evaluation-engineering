@@ -276,7 +276,7 @@ Score each aspect separately.
 | **[Berkeley Function Calling Leaderboard (BFCL)](https://gorilla.cs.berkeley.edu/leaderboard.html)** | Function calling accuracy | 2,000+ test cases | Multiple languages, complex schemas |
 | **[ToolBench](https://github.com/OpenBMB/ToolBench)** | API tool use | 16,000+ APIs | Real-world APIs |
 | **[API-Bank](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/api-bank)** | API call planning | 314 APIs | Multi-step tool planning |
-| **[Nexus Raven](https://github.com/nexusflowai/NexusRavenV2)** | Function calling | 1,000+ cases | Open-source function calling model |
+| **[Nexus Raven](https://github.com/nexusflowai/NexusRaven-V2)** | Function calling | 1,000+ cases | Open-source function calling model |
 | **[Τ-Bench](https://github.com/sierra-research/tau-bench)** | Tool-use in dialogues | 200+ tasks | Policy-following + tool use |
 
 ---

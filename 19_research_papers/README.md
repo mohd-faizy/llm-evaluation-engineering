@@ -21,3 +21,7 @@ Summarize each paper in terms of:
 - failure modes
 - whether the result is actionable in production
 
+---
+
+← [18. Coding Agent Evals](../18_coding_agent_evals/README.md) | [20. Build Your Own Eval Framework →](../20_build_your_own_eval_framework/README.md)
+

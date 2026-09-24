@@ -458,7 +458,8 @@ This is the central message of this module:
 - 📄 [Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference](https://arxiv.org/abs/2403.04132) — LMSYS Arena paper
 - 📄 [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/abs/2211.09110) — Stanford's comprehensive evaluation framework
 - 📝 [Vals.ai: Addressing Benchmark Leakage Through Private Audits](https://vals.ai/) — Evaluating models on private, held-out industry data rooms
-- 📝 [How to Read LLM Benchmarks](https://www.latent.space/p/benchmarks) — Practical guide from Latent Space
+- 📝 [Production AI Engineering Starts with Evals](https://www.latent.space/p/braintrust) — In-depth analysis from Latent Space on why evaluations define production AI
+- 📝 [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) — Practical guide to evaluation-driven AI engineering by Hamel Husain
 
 ---
 

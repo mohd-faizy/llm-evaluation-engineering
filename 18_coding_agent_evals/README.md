@@ -371,4 +371,4 @@ Evaluate the agent's process, not just the final patch.
 
 ---
 
-← [17. Multimodal Evals](../17_multimodal_evals/README.md) | [Back to Index →](../README.md)
+← [17. Multimodal Evals](../17_multimodal_evals/README.md) | [19. Research Papers →](../19_research_papers/README.md)

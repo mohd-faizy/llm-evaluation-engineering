@@ -31,3 +31,7 @@ The objective is to turn the concepts from the rest of the repository into a sys
 5. add judge-based scoring
 6. add dashboards and scheduled runs
 
+---
+
+← [19. Research Papers](../19_research_papers/README.md) | [Back to Curriculum Index →](../README.md#curriculum-roadmap)
+

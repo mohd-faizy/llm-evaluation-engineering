@@ -172,7 +172,7 @@ Self-correction is a critical agent capability. Evaluate it explicitly:
 | **[SWE-Bench](https://www.swebench.com/)** | Coding | Fix real GitHub issues | % resolved | 2,294 tasks | Real-world software engineering |
 | **[SWE-Bench Verified](https://www.swebench.com/)** | Coding | Fix validated GitHub issues | % resolved | 500 tasks | Human-verified, most reliable |
 | **[WebArena](https://webarena.dev/)** | Web | Complete web tasks | Task success | 812 tasks | Real websites, realistic tasks |
-| **[GAIA](https://gaia-benchmark.github.io/)** | General | Multi-step reasoning + tools | Accuracy | 466 tasks | Tests real-world assistant tasks |
+| **[GAIA](https://huggingface.co/spaces/gaia-benchmark/leaderboard)** | General | Multi-step reasoning + tools | Accuracy | 466 tasks | Tests real-world assistant tasks |
 | **[Τ-Bench](https://github.com/sierra-research/tau-bench)** | Customer support | Multi-turn tool-use dialogues | Task success | 200+ tasks | Tests policy-following + tool use |
 | **[ToolBench](https://github.com/OpenBMB/ToolBench)** | Tool use | API selection + execution | Pass rate | 16k+ APIs | Large-scale tool use |
 | **[AgentBench](https://github.com/THUDM/AgentBench)** | Multi-domain | Code, web, games, DB | Composite | 8 environments | Diverse agent capabilities |
