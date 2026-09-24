@@ -109,7 +109,7 @@ As foundation models matured and legacy academic benchmarks saturated, the AI co
 
 ---
 
-## Benchmark Deep Dives
+## Benchmark Deep Dives — Classic Foundation Tests
 
 ### Reasoning — GPQA
 
@@ -163,6 +163,187 @@ As foundation models matured and legacy academic benchmarks saturated, the AI co
 
 ---
 
+## Benchmark Deep Dives — Modern Agentic & Enterprise Benchmarks
+
+The 2025–2026 evaluation landscape marked a structural shift away from multiple-choice static exams toward **autonomous agents executing economically valuable, multi-hour workflows** within real software, system, and enterprise environments. Below are deep dives into the 10 modern frontier benchmarks:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                      MODERN AGENTIC BENCHMARK TAXONOMY (2025–2026)                              │
+├───────────────────────────────┬─────────────────────────────────┬───────────────────────────────┤
+│    Software Engineering       │   Enterprise & Knowledge Work   │     Composite & Domain        │
+├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
+│ • CursorBench v3.2 (IDE-flow) │ • GDPVal-AA v2 (Economic work)  │ • AA Intelligence Index (All) │
+│ • DeepSWE v1.1 (Clean SWE)    │ • AA-Briefcase (Long-horizon)   │ • Harvey LAB / Vals (Legal)   │
+│ • FrontierCode v1.1 (PR Merge)│ • APEX-Agents (White-collar)    │                               │
+│ • Terminal-Bench v3.0 (Shell) │                                 │                               │
+│ • APEX-SWE (Telemetry/DevOps) │                                 │                               │
+└───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
+```
+
+---
+
+### 1. AA Intelligence Index
+
+- **Developer / Host**: [Artificial Analysis](https://artificialanalysis.ai/) (Independent AI evaluation authority)
+- **What it tests**: Holistic, multi-modal frontier model intelligence across four balanced pillars: **Agents & Tool Use** (~30–34%), **General Reasoning & Broad Knowledge** (~18–30%), **Production Coding** (~20–24%), and **Scientific / Mathematical Reasoning** (~20–24%).
+- **Evaluation Mechanism**:
+  - Rather than relying on self-reported vendor scores or single-metric leaderboards, Artificial Analysis independently executes a suite of approximately 10 frontier benchmarks under standardized temperatures and deterministic harnesses.
+  - Sub-evaluations include: *GDPVal-AA*, *AA-Briefcase*, *Terminal-Bench*, *Humanity's Last Exam (HLE)*, *GPQA Diamond*, and *SciCode*.
+  - Raw sub-scores are normalized using calibrated clamp functions against Elo ratings (e.g., `clamp((Elo - 500) / 2000)`) to yield a unified composite score from 0 to 100.
+- **Why it matters**: Solves the "benchmark expiration" dilemma. Static leaderboards become obsolete as models saturate tests; the AA Intelligence Index dynamically deprecates saturated benchmarks and swaps in higher-ceiling evaluations across iterative releases (v4.0 → v4.1.1 → v4.3).
+
+---
+
+### 2. GDPVal-AA v2
+
+- **Developer / Host**: Artificial Analysis (expanded from OpenAI's original GDPval initiative)
+- **What it tests**: Autonomous execution of **economically valuable knowledge work** corresponding to human labor across 44 occupational categories and 9 global industries (Finance, Corporate Law, Management Consulting, Healthcare, Marketing, Software Architecture, Public Policy, etc.).
+- **Environment & Interaction Model**:
+  - Agents are initialized in a live sandbox equipped with bash shell execution, web browsing, Python interpreters, and file system read/write access.
+  - Prompts are complex enterprise briefs (e.g., *"Build an integrated three-statement financial valuation model under dual tariff shock scenarios and generate an executive presentation with sensitivity tables"*).
+  - Agents output authentic production deliverables: fully calculated Excel workbooks (`.xlsx`), formatted slide decks (`.pptx`), and formal briefing memos (`.docx`).
+- **Scoring & Metrics**:
+  - **Deliverable Elo Rating**: Derived from extensive blind, pairwise comparisons by domain-expert human reviewers and calibrated judge agents.
+  - **Multi-Factor Rubric**: Assesses analytical depth, financial/statutory formula correctness, visual formatting fidelity, and factual consistency.
+- **v2 Enhancements**: Upgraded in late 2025/2026 to introduce noisy input data rooms, ambiguous multi-step enterprise specifications, and strict anti-memorization safeguards.
+
+---
+
+### 3. CursorBench v3.2
+
+- **Developer / Host**: Cursor / [Anysphere](https://www.cursor.com/)
+- **What it tests**: Real-world **IDE-native agentic coding** — measuring how effectively AI agents navigate complex developer workspaces, write maintainable patches, and interact inside code editor environments (such as Cursor Composer / Agent CLI).
+- **Data Provenance ("Cursor Blame")**:
+  - Synthetic benchmarks (HumanEval) and public PR scrapes (SWE-bench) suffer from toy simplicity or training data memorization.
+  - CursorBench derives tasks directly from anonymized, real-world developer edit sessions using a proprietary technique called **"Cursor Blame"**, which traces committed production patches backwards to original natural language requests and editor context.
+- **Four Core Evaluation Pillars**:
+  1. **Solution Correctness**: Multi-language test suite execution across 200+ languages and frameworks in sandboxed runtimes.
+  2. **Code Quality**: Cyclomatic complexity analysis, duplicate logic detection, and architectural style consistency.
+  3. **Efficiency & Speed**: First-token latency, total interaction rounds, and token-cost efficiency per solved issue.
+  4. **Developer Interaction Fidelity**: Suggestion adoption rates and minimization of unnecessary code rewrites ("code churn").
+- **v3.2 Enhancements**: Introduced advanced data contamination detection, private held-out enterprise repositories, and multimodal UI-to-code verification.
+
+---
+
+### 4. DeepSWE v1.1
+
+- **Developer / Host**: [Datacurve](https://datacurve.ai/) (adopted by Artificial Analysis for the Coding Agent Index)
+- **What it tests**: **Contamination-resistant, long-horizon software engineering** in active open-source ecosystems.
+- **The Contamination Problem with SWE-Bench**:
+  - Standard SWE-bench problems are mined from historic, public GitHub pull requests. Frontier models frequently memorize these exact PR diffs, discussions, and unit tests during web pretraining.
+- **The DeepSWE Architecture**:
+  - Consists of **113 original, multi-step engineering tasks** authored completely from scratch across 5 modern enterprise programming languages: TypeScript, Go, Python, JavaScript, and Rust.
+  - Authored directly inside active, contemporary repositories by senior software engineers specifically for evaluation, ensuring zero overlap with public pretraining corpora.
+- **v1.1 Safeguards & Anti-Cheating**:
+  - **Hermetic Docker Runtimes**: Full network isolation during test evaluation.
+  - **Stripped Git History**: Git commit logs and reflogs are stripped and sanitized, preventing agents from extracting golden patches from repository metadata.
+  - **Adversarial & Hidden Test Suites**: Hidden regression suites prevent agents from gaming assertions by mocking test runners or hardcoding return constants.
+- **Metric**: `% Resolved` — all existing repository tests and private withheld test suites must pass cleanly.
+
+---
+
+### 5. FrontierCode v1.1 (Extended)
+
+- **Developer / Host**: [Cognition AI](https://www.cognition.ai/) (creators of Devin)
+- **What it tests**: **Production-grade code quality and pull request mergeability** against the editorial standards of senior open-source maintainers and tech leads.
+- **Why Passing Unit Tests Isn't Enough**:
+  - Traditional benchmarks consider an issue solved if a unit test passes. However, models often pass tests by writing hacky workarounds, adding redundant dependencies, polluting global state, or introducing major architectural regressions.
+- **Evaluation Rubric**:
+  1. **Functional Correctness**: Comprehensive bug resolution verified by sandboxed test suites.
+  2. **Blast Radius & Scope Control**: Strictly penalizes sprawling diffs, unnecessary file reformatting, dead code, or hallucinated files.
+  3. **Idiomatic Style & Architectural Fit**: Strict compliance with repository linters, typing systems, and architectural design patterns.
+  4. **Production Maintainability**: Human-maintainer review scoring whether the PR would be merged or rejected in a top-tier open-source project.
+- **Extended Split**: Tests challenging long-horizon engineering challenges involving cross-repository refactors, major framework version migrations, and complex asynchronous state machines.
+
+---
+
+### 6. APEX-Agents
+
+- **Developer / Host**: [Mercor](https://mercor.com/)
+- **What it tests**: High-stakes **cross-application professional white-collar workflows** simulating the day-to-day labor of investment banking analysts, management consultants, and corporate attorneys.
+- **Environment & Simulation**:
+  - Agents are placed in a realistic simulated corporate desktop with complete filesystem access containing real-world artifacts: audited 10-K/10-Q SEC filings, messy enterprise Excel models, slide decks, client email threads, and scheduling calendars.
+  - Tasks require multi-hour cognitive endurance, cross-file context tracking, and synthesis of disparate quantitative and qualitative signals.
+- **Typical Task Profiles**:
+  - Performing full Discounted Cash Flow (DCF) and Leveraged Buyout (LBO) valuation models with linked dynamic schedules.
+  - Cross-referencing multi-hundred-page regulatory filings to draft antitrust risk summaries.
+  - Synthesizing customer churn data from raw CSV exports into C-suite PowerPoint presentations.
+- **Scoring & Metrics**:
+  - **Expert Human Rubric (0–100)**: Evaluated by former Wall Street analysts, McKinsey/BCG consultants, and corporate lawyers.
+  - **Programmatic Invariant Verification**: Validates formula integrity, balance sheet balancing, and citation accuracy.
+
+---
+
+### 7. Terminal-Bench v3.0
+
+- **Developer / Host**: Joint community initiative ([T-Bench](https://tbench.ai/), Vals.ai, OpenAI contributors, and Artificial Analysis)
+- **What it tests**: Autonomous **command-line interface (CLI) execution, Linux systems administration, DevOps orchestration, and security auditing**.
+- **Task Domains**:
+  - *DevOps & Infrastructure*: Orchestrating Docker Compose multi-container networks, diagnosing Kubernetes Pod CrashLoopBackOff states, configuring systemd daemons, and tuning Nginx reverse proxies.
+  - *Systems Administration & OS*: Configuring Linux kernel parameters, resolving complex POSIX file permission/ACL bottlenecks, and managing storage volumes.
+  - *Data & Systems Compilation*: Building complex C++/Rust projects from source with missing shared libraries, setting up replication across PostgreSQL clusters, and diagnosing broken iptables firewall routing.
+- **v3.0 Advancements**:
+  - Substantially elevates difficulty over v2.x with hardened multi-step failure injection.
+  - Imposes tight wall-clock time and token budgets.
+  - Demands dynamic error-stream parsing: when a bash command exits non-zero, the agent must parse stderr, inspect logs, formulate a debugging hypothesis, and recover autonomously.
+- **Metric**: **Programmatic End-State Assertions (% Passed)** — pristine Docker containers verify filesystem changes, active network sockets, process tables, and command outputs.
+
+---
+
+### 8. APEX-SWE
+
+- **Developer / Host**: Mercor in partnership with Cognition AI
+- **What it tests**: **Real-world, economically valuable enterprise software engineering** beyond unit-level algorithmic problem solving, focusing on two dominant industry pain points:
+  1. **Distributed System Integrations**: Building end-to-end integration bridges across microservices, cloud APIs, payment gateways (e.g., Stripe webhooks), message brokers (Kafka/RabbitMQ), and OAuth2/SAML auth systems.
+  2. **Live Observability & Incident Remediation**: Debugging live production outages using industry-standard telemetry stacks.
+- **Environment & Telemetry Harness**:
+  - Agents are dropped into live, running distributed environments experiencing active, injected production failures (e.g., memory leaks, database connection pool exhaustion, cascading HTTP 504 timeouts, thread deadlocks).
+  - Agents must query telemetry tools — inspecting **Grafana dashboards**, querying **Prometheus time-series metrics**, and parsing **Loki / Datadog log streams** — to identify root causes.
+- **Metrics**:
+  - **Mean Time to Detect & Resolve (MTTR)**.
+  - **Root-Cause Fix Correctness (%)**.
+  - **SLO / SLA Restoration Verification** without triggering regressions.
+
+---
+
+### 9. AA-Briefcase
+
+- **Developer / Host**: Artificial Analysis
+- **What it tests**: **Long-horizon enterprise project execution** requiring deep reasoning across massive corporate data rooms.
+- **Evaluation Concept**:
+  - While single-turn benchmarks evaluate short answers and GDPVal tests single deliverables, AA-Briefcase evaluates an agent acting as a virtual enterprise associate across **multi-week, multi-phase corporate initiatives**.
+- **Input Corpus Scale**:
+  - Agents are given access to virtual "briefcases" containing thousands of pages of raw enterprise documents: contracts, merger agreements, audited annual reports, customer call transcripts, compliance filings, and internal memos.
+- **Workflows Evaluated**:
+  - Comprehensive M&A due diligence investigations with automated redline generation.
+  - Multi-tier supply chain risk modeling under geopolitical tariff disruptions.
+  - Multi-jurisdiction corporate tax strategy synthesis.
+- **Scoring**:
+  - **Deterministic Formula Auditing**: Automated headless checkers verify arithmetic integrity across spreadsheets and financial schedules.
+  - **Calibrated Expert Rubrics**: Evaluates strategic insight, legal hazard identification, and executive clarity.
+
+---
+
+### 10. Harvey LAB (Vals)
+
+- **Developer / Host**: [Harvey AI](https://www.harvey.ai/) (premier legal AI platform) in partnership with [Vals.ai](https://vals.ai/)
+- **What it tests**: **High-stakes domain-specific legal reasoning, statutory analysis, and contract engineering**.
+- **The Zero-Contamination "Vals" Guarantee**:
+  - Legal datasets on the public internet are heavily ingested into foundation model pre-training corpora.
+  - Under the **Vals.ai** framework, the Harvey LAB suite is maintained as a **100% private, held-out evaluation**. Evaluations are executed blindly by Vals.ai in a secure environment; model weights or API endpoints are tested without model creators ever accessing the test cases or rubrics.
+- **Scope & Practice Areas**:
+  - Over 120 complex, authentic legal workflows spanning 24 practice areas: M&A, Capital Markets, Securities Compliance, Intellectual Property Litigation, Labor & Employment, Tax Law, and Antitrust.
+- **Task Typologies**:
+  - Drafting comprehensive Disclosure Schedules for private equity acquisition agreements from disorganized diligence folders.
+  - Synthesizing multi-thousand-page deposition transcripts to identify contradictory witness statements for courtroom cross-examination.
+  - Resolving conflicting appellate circuit splits to draft persuasive appellate briefs.
+- **Scoring**:
+  - Evaluated against partner-grade rubrics authored by former AmLaw 100 partners and federal judicial clerks.
+  - Scores heavily penalize hallucinated legal precedents or inaccurate statutory citations while rewarding nuanced jurisdictional distinction and risk-hedged drafting.
+
+---
+
 ## Interpreting Benchmark Scores
 
 ### Dos ✅
@@ -209,17 +390,23 @@ A model's score can change dramatically based on:
 **Mitigation**: Report pass@1 as the primary metric. Be explicit about prompting strategy.
 
 ### 4. Benchmark Saturation
-When the top 10 models all score within 1-2% of each other, the benchmark is no longer useful for discriminating between them.
+When the top 10 models all score within 1-2% of each other, the benchmark is no longer useful for discriminating between them. In 2025–2026, evaluation has decisively bifurcated between saturated legacy tests and the active frontier of agentic benchmarks:
 
-| Benchmark | Saturation Status (Mid-2025) |
-|---|---|
-| HellaSwag | ⚠️ Saturated (>95%) |
-| GSM8K | ⚠️ Near-saturated for frontier models |
-| MMLU | ⚠️ Approaching saturation |
-| MATH | ✅ Still discriminating |
-| GPQA Diamond | ✅ Still discriminating |
-| SWE-Bench Verified | ✅ Still discriminating |
-| LiveBench | ✅ Refreshes regularly |
+| Benchmark | Saturation Status (2025–2026) | Role in Evaluation |
+|---|---|---|
+| **HellaSwag** | 🔴 Saturated (>95%) | Obsolete for frontier models; basic sanity check only |
+| **GSM8K** | 🔴 Saturated (>98%) | Near-trivial for reasoning models; replaced by MATH / AIME |
+| **HumanEval** | 🔴 Saturated (>90% pass@1) | Saturated for modern agent loops; replaced by repo-level benchmarks |
+| **MMLU** | 🟡 Saturated / Contaminated | Approaching ceiling; high data contamination risk |
+| **MMLU-Pro / GPQA Diamond** | 🟢 Discriminating | Useful for high-level scientific and academic reasoning |
+| **SWE-Bench Verified** | 🟢 Discriminating | Established baseline for agentic repo-level coding |
+| **CursorBench v3.2** | 🟢 High Discrimination | Active frontier for real-world developer IDE workflows |
+| **DeepSWE v1.1** | 🟢 High Discrimination | Solves SWE-Bench contamination via zero-leakage authored tasks |
+| **Terminal-Bench v3.0** | 🟢 High Discrimination | High ceiling for bash, DevOps, systems, and error-recovery |
+| **APEX-SWE & APEX-Agents** | 🟢 High Discrimination | Active frontier for distributed debugging & multi-hour white-collar labor |
+| **GDPVal-AA v2 & AA-Briefcase** | 🟢 High Discrimination | Active frontier for multi-step enterprise knowledge work |
+| **Harvey LAB (Vals)** | 🟢 High Discrimination | Active frontier for partner-grade legal and regulatory reasoning |
+| **AA Intelligence Index** | 🔄 Continuously Calibrated | Solves saturation by dynamically replacing ceiling-hit components |
 
 ---
 
@@ -230,12 +417,12 @@ This is the central message of this module:
 | Dimension | Benchmarks | Application Evals |
 |---|---|---|
 | **Purpose** | Compare general model capabilities | Validate fitness for your specific product |
-| **Data** | Public, standardized | Private, task-specific |
-| **Distribution** | Academic / synthetic | Your actual user inputs |
-| **Metrics** | Accuracy, pass@k | Task success, user satisfaction, cost, latency |
-| **Contamination Risk** | High (public data) | Low (private data) |
-| **Who runs them** | Model providers, researchers | Your team |
-| **When to use** | Model selection & tracking | Before every deployment |
+| **Data** | Public, standardized (or third-party audited) | Private, task-specific |
+| **Distribution** | Academic / synthetic / generalized tasks | Your actual user inputs & production telemetry |
+| **Metrics** | Accuracy, pass@k, Elo, container assertions | Task success, user satisfaction, cost, latency |
+| **Contamination Risk** | High for static public tests; medium for private sets | Zero (proprietary enterprise data) |
+| **Who runs them** | Model providers, benchmark labs (AA, Vals) | Your engineering team |
+| **When to use** | Model selection & shortlisting | Before every deployment & continuous monitoring |
 
 > **Bottom line**: Use benchmarks to **shortlist models**. Use application evals to **make shipping decisions**. Never ship based on benchmark scores alone.
 
@@ -245,23 +432,32 @@ This is the central message of this module:
 
 | Resource | URL | Notes |
 |---|---|---|
+| **Artificial Analysis** | [artificialanalysis.ai](https://artificialanalysis.ai/) | Independent benchmark index, speed/cost analytics, Coding Agent Index, GDPVal-AA, and AA Intelligence Index |
+| **Vals.ai** | [vals.ai](https://vals.ai/) | High-integrity, zero-contamination private benchmark authority (Harvey LAB, Finance Agent, Terminal-Bench) |
 | **Chatbot Arena (LMSYS)** | [lmarena.ai](https://lmarena.ai/) | ELO-based human preference ranking |
+| **LiveBench** | [livebench.ai](https://livebench.ai/) | Contamination-resistant, monthly refreshed academic benchmark |
+| **SWE-Bench Leaderboard** | [swebench.com](https://www.swebench.com/) | Standard agentic coding leaderboard (Lite & Verified splits) |
+| **Datacurve (DeepSWE)** | [datacurve.ai](https://datacurve.ai/) | Contamination-free software engineering benchmark suite |
+| **Mercor APEX** | [mercor.com](https://mercor.com/) | Real-world white-collar work (APEX-Agents) and systems engineering (APEX-SWE) |
+| **Terminal-Bench** | [tbench.ai](https://tbench.ai/) | Command-line environment and systems administration agent evaluations |
+| **Cognition (Devin / FrontierCode)** | [cognition.ai](https://www.cognition.ai/) | Production PR mergeability and code quality evaluation |
+| **SEAL Leaderboards** | [scale.com/leaderboard](https://scale.com/leaderboard) | Expert-human evaluated enterprise rankings |
 | **Open LLM Leaderboard** | [Hugging Face](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard) | Open-weight model comparisons |
-| **LiveBench** | [livebench.ai](https://livebench.ai/) | Contamination-resistant, refreshed monthly |
-| **SWE-Bench Leaderboard** | [swebench.com](https://www.swebench.com/) | Agentic coding leaderboard |
-| **Artificial Analysis** | [artificialanalysis.ai](https://artificialanalysis.ai/) | Speed, cost, and quality comparisons |
-| **SEAL Leaderboards** | [scale.com/leaderboard](https://scale.com/leaderboard) | Expert-human evaluated rankings |
 
 ---
 
 ## Further Reading
 
-- 📄 [Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300) — Original MMLU paper
+- 📄 [Artificial Analysis Intelligence Index & Methodology](https://artificialanalysis.ai/methodology) — Comprehensive breakdown of modern multi-pillar composite evaluations
+- 📄 [Terminal-Bench: Evaluating AI Agents in Shell Environments](https://arxiv.org/abs/2410.05338) — Terminal-Bench methodology and Linux sandbox evaluation
+- 📄 [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://arxiv.org/abs/2310.06770) — SWE-Bench foundation paper
+- 📄 [APEX: Benchmarking Long-Horizon Professional & Software Agents](https://arxiv.org/abs/2412.18567) — Mercor APEX benchmark specification
 - 📄 [GPQA: A Graduate-Level Google-Proof QA Benchmark](https://arxiv.org/abs/2311.12022) — GPQA paper
-- 📄 [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://arxiv.org/abs/2310.06770) — SWE-Bench paper
-- 📄 [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/abs/2211.09110) — Stanford's comprehensive evaluation framework
-- 📄 [Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference](https://arxiv.org/abs/2403.04132) — LMSYS Arena paper
+- 📄 [Measuring Massive Multitask Language Understanding (MMLU)](https://arxiv.org/abs/2009.03300) — Original MMLU paper
 - 📄 [LiveBench: A Challenging, Contamination-Free LLM Benchmark](https://arxiv.org/abs/2406.19314) — LiveBench paper
+- 📄 [Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference](https://arxiv.org/abs/2403.04132) — LMSYS Arena paper
+- 📄 [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/abs/2211.09110) — Stanford's comprehensive evaluation framework
+- 📝 [Vals.ai: Addressing Benchmark Leakage Through Private Audits](https://vals.ai/) — Evaluating models on private, held-out industry data rooms
 - 📝 [How to Read LLM Benchmarks](https://www.latent.space/p/benchmarks) — Practical guide from Latent Space
 
 ---
