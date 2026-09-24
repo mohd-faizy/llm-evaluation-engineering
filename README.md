@@ -69,8 +69,6 @@ This repository is an industry-tested, end-to-end framework and curriculum desig
 
 <div align="center"> 
   <img src="assets/rdmd01.png" width="550" alt="rdmd01" style="border-radius: 10px;"> 
-</div>
-
   <p><em>Figure 1: Full-Spectrum LLM Evaluation Architecture — from offline datasets to production monitoring.</em></p>
 </div>
 
@@ -80,9 +78,6 @@ This repository is an industry-tested, end-to-end framework and curriculum desig
 
 The curriculum is structured into **5 logical phases across 21 modular sections**, guiding you from baseline mindset to building custom evaluation frameworks:
 
-```
-Phase 1: Foundations ──► Phase 2: Core Engineering ──► Phase 3: Systems & Agents ──► Phase 4: Production & Safety ──► Phase 5: Frontiers & Capstone
-```
 
 ### Phase I: Foundations & Strategic Mindset
 *Understand the philosophy, mathematics, and public benchmarks before writing evaluation code.*
