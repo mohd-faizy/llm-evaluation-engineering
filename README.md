@@ -1,16 +1,34 @@
 <div align="center">
 
-# 📐 Production-Grade LLM Evaluation Engineering & Metrics
+
+<div align="center"> 
+  <img src="assets/banner.png" width="750" alt="banner" style="border-radius: 10px;"> 
+</div>
 
 **The Comprehensive Architectural Blueprint, Curriculum, and Practical Toolkit for Evaluating, Benchmarking, and Monitoring Enterprise LLMs, RAG Pipelines, and Autonomous Agents.**
 
 <p align="center">
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evals-metrics/stargazers"><img src="https://img.shields.io/github/stars/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=github&color=eab308" alt="GitHub Stars" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evals-metrics/network/members"><img src="https://img.shields.io/github/forks/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=git&color=38bdf8" alt="GitHub Forks" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evals-metrics/issues"><img src="https://img.shields.io/github/issues/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=github&color=f43f5e" alt="Open Issues" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evals-metrics/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white" alt="PRs Welcome" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evals-metrics/commits/main"><img src="https://img.shields.io/github/last-commit/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=git&color=818cf8" alt="Last Commit" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evals-metrics"><img src="https://img.shields.io/github/repo-size/mohd-faizy/llm-evals-metrics?style=for-the-badge&logo=database&color=06b6d4" alt="Repo Size" /></a>
+</p>
+
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" /></a>
   <a href="https://jupyter.org/"><img src="https://img.shields.io/badge/Jupyter-Notebooks-F37626.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Notebooks" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-22c55e.svg?style=for-the-badge" alt="MIT License" /></a>
-  <a href="#-curriculum-roadmap"><img src="https://img.shields.io/badge/Curriculum-21%20Modules-6366f1.svg?style=for-the-badge" alt="21 Modules" /></a>
-  <a href="#-interactive-hands-on-notebooks"><img src="https://img.shields.io/badge/Lab%20Notebooks-10%20Guides-ec4899.svg?style=for-the-badge" alt="10 Lab Notebooks" /></a>
-  <a href="https://github.com/mohd-faizy/llm-evals-metrics/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-22c55e.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="MIT License" /></a>
+  <a href="#-curriculum-roadmap"><img src="https://img.shields.io/badge/Curriculum-21%20Modules-6366f1.svg?style=for-the-badge&logo=readme&logoColor=white" alt="21 Modules" /></a>
+  <a href="#-interactive-hands-on-notebooks"><img src="https://img.shields.io/badge/Lab%20Notebooks-10%20Guides-ec4899.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="10 Lab Notebooks" /></a>
+</p>
+
+<p align="center">
+  <a href="#-overview"><img src="https://img.shields.io/badge/Evals-RAG%20%7C%20Agents%20%7C%20Judge-8b5cf6.svg?style=for-the-badge&logo=openai&logoColor=white" alt="Evals Focus" /></a>
+  <a href="#-key-evaluation-frameworks--tools-reference"><img src="https://img.shields.io/badge/Frameworks-DeepEval%20%7C%20Ragas-ff69b4.svg?style=for-the-badge" alt="DeepEval and Ragas" /></a>
+  <a href="03_benchmarks/README.md"><img src="https://img.shields.io/badge/Benchmarks-MMLU%20%7C%20SWE--bench-10b981.svg?style=for-the-badge" alt="Benchmarks" /></a>
+  <a href="https://github.com/mohd-faizy/llm-evals-metrics"><img src="https://img.shields.io/badge/Maintenance-Active-brightgreen.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="Active Maintenance" /></a>
 </p>
 
 <p align="center">
@@ -264,7 +282,16 @@ We welcome contributions from the AI engineering community! Whether you want to 
 This repository is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for complete details.
 
 ---
+## 🔗 Connect with Me
 
 <div align="center">
-  <sub>Built with 💡 for AI Engineers, ML Scientists, and Product Teams building dependable GenAI systems.</sub>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://mohdfaizy.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-faizy/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohd-faizy)
+[![Credly](https://img.shields.io/badge/Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/mohd-faizy)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/F4izy)
+[![Stack Exchange](https://img.shields.io/badge/Stack_Exchange-1E5397?style=for-the-badge&logo=stack-exchange&logoColor=white)](https://ai.stackexchange.com/users/36737/faizy)
+
 </div>
+
