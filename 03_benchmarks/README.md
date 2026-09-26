@@ -167,19 +167,7 @@ As foundation models matured and legacy academic benchmarks saturated, the AI co
 
 The 2025–2026 evaluation landscape marked a structural shift away from multiple-choice static exams toward **autonomous agents executing economically valuable, multi-hour workflows** within real software, system, and enterprise environments. Below are deep dives into the 10 modern frontier benchmarks:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                      MODERN AGENTIC BENCHMARK TAXONOMY (2025–2026)                              │
-├───────────────────────────────┬─────────────────────────────────┬───────────────────────────────┤
-│    Software Engineering       │   Enterprise & Knowledge Work   │     Composite & Domain        │
-├───────────────────────────────┼─────────────────────────────────┼───────────────────────────────┤
-│ • CursorBench v3.2 (IDE-flow) │ • GDPVal-AA v2 (Economic work)  │ • AA Intelligence Index (All) │
-│ • DeepSWE v1.1 (Clean SWE)    │ • AA-Briefcase (Long-horizon)   │ • Harvey LAB / Vals (Legal)   │
-│ • FrontierCode v1.1 (PR Merge)│ • APEX-Agents (White-collar)    │                               │
-│ • Terminal-Bench v3.0 (Shell) │                                 │                               │
-│ • APEX-SWE (Telemetry/DevOps) │                                 │                               │
-└───────────────────────────────┴─────────────────────────────────┴───────────────────────────────┘
-```
+![Modern Agentic Benchmark Taxonomy (2025–2026)](../assets/03_benchmark_taxonomy.png)
 
 ---
 
